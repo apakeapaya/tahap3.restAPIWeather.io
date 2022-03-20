@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ConsumeAPIMetaweather</string>
+    <string name="invalid_data">Invalid Data</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_profile"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="134dp"
+                android:layout_height="159dp"
+                android:src="@drawable/foto" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project Consume API"
+                    android:textSize="11pt"
+                    android:textColor="@color/white"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ali Topan"
+                    android:textColor="@color/white"
+                    android:textSize="10pt"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bachelor's Degree"
+                    android:textColor="@color/white"
+                    android:textSize="10pt"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weather Data with Metaweather"
+                    android:textColor="@color/white"
+                    android:textSize="7pt"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/input_Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Input Data" />
+
+        <LinearLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_getWeatherByName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search City Weather By  Name" />
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_weatherReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
